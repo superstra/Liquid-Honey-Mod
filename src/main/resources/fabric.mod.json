@@ -2,39 +2,40 @@
 	"schemaVersion": 1,
 	"id": "liquid-honey",
 	"version": "${version}",
-	"name": "Liquid Honey",
-	"description": "Adds liquid honey to minecraft along with a few features. Made by superstra to learn modding",
+	"name": "Liquid-Honey",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"superstra"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://github.com/superstra/Liquid-Honey-Mod",
-		"sources": "https://github.com/superstra/Liquid-Honey-Mod"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "MIT",
+	"license": "CC0-1.0",
 	"icon": "assets/liquid-honey/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"superstra.liquidhoney.LiquidHoney"
+			{
+				"value": "com.superstra.liquidhoney.LiquidHoney",
+				"adapter": "kotlin"
+			}
 		],
 		"fabric-datagen": [
-			"superstra.liquidhoney.LiquidHoneyDataGenerator"
-		],
-		"client": [
-			"superstra.liquidhoney.LiquidHoneyClient"
+			{
+				"value": "com.superstra.liquidhoney.LiquidHoneyDataGenerator",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
 		"liquid-honey.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
 	}
 }

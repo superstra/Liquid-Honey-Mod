@@ -1,4 +1,4 @@
-package superstra.liquidhoney.mixin;
+package com.superstra.liquidhoney.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
