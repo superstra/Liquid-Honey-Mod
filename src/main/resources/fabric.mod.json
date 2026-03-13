@@ -3,15 +3,15 @@
 	"id": "liquid-honey",
 	"version": "${version}",
 	"name": "Liquid-Honey",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds liquid honey to Minecraft along with a few features. Made by superstra to learn Minecraft modding.",
 	"authors": [
-		"Me!"
+		"superstra"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/superstra/Liquid-Honey-Mod",
+		"sources": "https://github.com/superstra/Liquid-Honey-Mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/liquid-honey/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -26,6 +26,9 @@
 				"value": "com.superstra.liquidhoney.LiquidHoneyDataGenerator",
 				"adapter": "kotlin"
 			}
+		],
+		"client": [
+			"com.superstra.liquidhoney.LiquidHoneyClient"
 		]
 	},
 	"mixins": [
